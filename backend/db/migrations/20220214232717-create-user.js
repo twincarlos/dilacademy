@@ -24,8 +24,10 @@ module.exports = {
         type: Sequelize.STRING.BINARY,
         allowNull: false
       },
-      profilePicture: {
-        type: Sequelize.STRING,
+      email: {
+        type: Sequelize.STRING(256),
+        allowNull: false,
+        unique: true
       },
       createdAt: {
         allowNull: false,
